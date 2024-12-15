@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1-0-107
+      author: Liquibase
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - addUniqueConstraint:
+            columnNames: project_id, name
+            constraintName: uc_project_id_name
+            tableName: milestone
+
+        - addUniqueConstraint:
+            columnNames: name
+            constraintName: uc_name
+            tableName: project
+
+        - addUniqueConstraint:
+            columnNames: milestone_id, title
+            constraintName: uc_milestone_id_title
+            tableName: ticket
+
+        - addUniqueConstraint:
+            columnNames: username
+            constraintName: uc_username
+            tableName: user_
+
+        - addUniqueConstraint:
+            columnNames: user_id, project_id, role
+            constraintName: uc_user_id_project_id_role
+            tableName: user_project_role

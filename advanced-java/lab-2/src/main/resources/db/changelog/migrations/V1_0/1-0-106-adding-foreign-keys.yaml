@@ -1,0 +1,54 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1-0-106
+      author: Liquibase
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: project_id
+            baseTableName: bug_report
+            constraintName: FK_BUGREPORT_ON_PROJECT
+            referencedColumnNames: id
+            referencedTableName: project
+
+        - addForeignKeyConstraint:
+            baseColumnNames: user_id
+            baseTableName: bug_report
+            constraintName: FK_BUGREPORT_ON_USER
+            referencedColumnNames: id
+            referencedTableName: user_
+
+        - addForeignKeyConstraint:
+            baseColumnNames: project_id
+            baseTableName: milestone
+            constraintName: FK_MILESTONE_ON_PROJECT
+            referencedColumnNames: id
+            referencedTableName: project
+
+        - addForeignKeyConstraint:
+            baseColumnNames: milestone_id
+            baseTableName: ticket
+            constraintName: FK_TICKET_ON_MILESTONE
+            referencedColumnNames: id
+            referencedTableName: milestone
+
+        - addForeignKeyConstraint:
+            baseColumnNames: user_id
+            baseTableName: ticket
+            constraintName: FK_TICKET_ON_USER
+            referencedColumnNames: id
+            referencedTableName: user_
+
+        - addForeignKeyConstraint:
+            baseColumnNames: project_id
+            baseTableName: user_project_role
+            constraintName: FK_USERPROJECTROLE_ON_PROJECT
+            referencedColumnNames: id
+            referencedTableName: project
+
+        - addForeignKeyConstraint:
+            baseColumnNames: user_id
+            baseTableName: user_project_role
+            constraintName: FK_USERPROJECTROLE_ON_USER
+            referencedColumnNames: id
+            referencedTableName: user_

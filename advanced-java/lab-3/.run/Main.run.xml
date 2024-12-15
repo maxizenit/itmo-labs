@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+    <option name="MAIN_CLASS_NAME" value="com.vk.itmo.Main" />
+    <module name="explore-concurrency-lab-3.main" />
+    <option name="PROGRAM_PARAMETERS" value="7 2 100 2 100 200" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

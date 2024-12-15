@@ -1,0 +1,28 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1-0-105
+      author: Liquibase
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_userprojectrole
+                  name: user_id
+                  type: uuid
+              - column:
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_userprojectrole
+                  name: project_id
+                  type: uuid
+              - column:
+                  constraints:
+                    nullable: false
+                  name: role
+                  type: VARCHAR(255)
+            tableName: user_project_role
