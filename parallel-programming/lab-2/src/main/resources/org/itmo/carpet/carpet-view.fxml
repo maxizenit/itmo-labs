@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.itmo.carpet.CarpetController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <GridPane hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" vgap="5.0" VBox.vgrow="NEVER">
+        <columnConstraints>
+          <ColumnConstraints maxWidth="240.0" minWidth="10.0" prefWidth="189.0" />
+          <ColumnConstraints maxWidth="339.0" minWidth="10.0" prefWidth="227.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Количество итераций" />
+            <Label text="Количество потоков генерации" GridPane.rowIndex="1" />
+            <Label text="Цвет фрактала" GridPane.rowIndex="3" />
+            <Spinner fx:id="iterationsSpinner" editable="true" GridPane.columnIndex="1" />
+            <ColorPicker fx:id="carpetColorPicker" onAction="#onCarpetColorPickerAction" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <value>
+                  <Color />
+               </value></ColorPicker>
+            <Button fx:id="generateButton" mnemonicParsing="false" onAction="#onGenerateButtonClick" text="Генерировать" GridPane.rowIndex="4" />
+            <Label fx:id="resultLabel" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Spinner fx:id="threadsCountSpinner" editable="true" layoutX="167.0" layoutY="13.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Цвет фона" GridPane.rowIndex="2" />
+            <ColorPicker fx:id="backgroundColorPicker" onAction="#onBackgroundColorPickerAction" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </GridPane>
+      <ScrollPane fx:id="scrollPane" prefHeight="200.0" prefWidth="500.0" VBox.vgrow="ALWAYS">
+         <content>
+            <Canvas fx:id="canvas" />
+         </content></ScrollPane>
+      <HBox alignment="BOTTOM_RIGHT" spacing="5.0">
+         <children>
+            <Label text="Коэффициент масштабирования" />
+            <Slider fx:id="scaleSlider" blockIncrement="0.0" majorTickUnit="1.0" max="10.0" maxHeight="-Infinity" maxWidth="-Infinity" min="1.0" minHeight="-Infinity" minWidth="-Infinity" minorTickCount="0" nodeOrientation="LEFT_TO_RIGHT" onMouseReleased="#onScaleSliderMouseReleased" prefHeight="14.0" prefWidth="250.0" showTickLabels="true" showTickMarks="true" value="1.0" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

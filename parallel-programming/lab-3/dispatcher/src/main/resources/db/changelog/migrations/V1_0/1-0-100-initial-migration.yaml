@@ -1,0 +1,115 @@
+databaseChangeLog:
+  - changeSet:
+      id: 0-0-100
+      author: Liquibase
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_worker
+                  name: id
+                  type: int
+              - column:
+                  constraints:
+                    nullable: false
+                  name: enabled
+                  type: boolean
+            tableName: worker
+
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_task
+                  name: id
+                  type: int
+              - column:
+                  constraints:
+                    nullable: false
+                  name: status
+                  type: varchar
+              - column:
+                  constraints:
+                    nullable: false
+                  name: name_replacement
+                  type: varchar
+              - column:
+                  name: start_time
+                  type: timestamp
+              - column:
+                  name: end_time
+                  type: timestamp
+              - column:
+                  constraints:
+                    nullable: false
+                  name: file
+                  type: blob
+              - column:
+                  name: result
+                  type: varchar
+            tableName: task
+
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_task_part
+                  name: id
+                  type: int
+              - column:
+                  constraints:
+                    nullable: false
+                  name: task_id
+                  type: int
+              - column:
+                  constraints:
+                    nullable: false
+                  name: ordinal
+                  type: int
+              - column:
+                  constraints:
+                    nullable: false
+                  name: worker_id
+                  type: int
+              - column:
+                  constraints:
+                    nullable: false
+                  name: text
+                  type: varchar
+              - column:
+                  constraints:
+                    nullable: false
+                  name: is_completed
+                  type: boolean
+              - column:
+                  name: result
+                  type: varchar
+            tableName: task_part
+
+        - addForeignKeyConstraint:
+            baseTableName: task_part
+            baseColumnNames: task_id
+            referencedTableName: task
+            referencedColumnNames: id
+            onUpdate: CASCADE
+            onDelete: CASCADE
+            constraintName: fk_task_part_task_id
+
+        - addForeignKeyConstraint:
+            baseTableName: task_part
+            baseColumnNames: worker_id
+            referencedTableName: worker
+            referencedColumnNames: id
+            onUpdate: CASCADE
+            onDelete: SET NULL
+            constraintName: fk_task_part_worker_id

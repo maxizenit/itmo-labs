@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "a89de12d-4cc6-4824-a86b-82214d5d45d4",
+		"name": "Text analyzer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17915999"
+	},
+	"item": [
+		{
+			"name": "Create task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file"
+						},
+						{
+							"key": "nameReplacement",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{dispatcherUrl}}/tasks",
+					"host": [
+						"{{dispatcherUrl}}"
+					],
+					"path": [
+						"tasks"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get task result",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{dispatcherUrl}}/tasks/{{taskId}}/result",
+					"host": [
+						"{{dispatcherUrl}}"
+					],
+					"path": [
+						"tasks",
+						"{{taskId}}",
+						"result"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get elapsed time for all tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{dispatcherUrl}}/tasks/elapsedTime",
+					"host": [
+						"{{dispatcherUrl}}"
+					],
+					"path": [
+						"tasks",
+						"elapsedTime"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "taskId",
+			"value": "1"
+		},
+		{
+			"key": "dispatcherUrl",
+			"value": "localhost:8080"
+		}
+	]
+}
