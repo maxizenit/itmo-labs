@@ -1,0 +1,17 @@
+1 reducer:
+data_block_size time
+512kb           11784ms
+1mb             9699ms
+2mb             9669ms
+4mb             8681ms
+8mb             8679ms
+16mb            8685ms
+32mb            8676ms
+
+time-by-reducer-count (data_block_size = 32mb)
+reducer_count   time
+1               8676ms
+2               8713ms
+4               8725ms
+8               8712ms
+16              8697ms
