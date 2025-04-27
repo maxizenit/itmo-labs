@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "eb1bce24-27c3-43eb-af33-78f9cc7db7f1",
+		"name": "ST Lab2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17915999"
+	},
+	"item": [
+		{
+			"name": "Register user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/register?userId=user1&userName=Alice",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"register"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "user1"
+						},
+						{
+							"key": "userName",
+							"value": "Alice"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Record session",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/recordSession?userId=user1&loginTime=2025-03-01T10:00:00&logoutTime=2025-03-01T10:10:00",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"recordSession"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "user1"
+						},
+						{
+							"key": "loginTime",
+							"value": "2025-03-01T10:00:00"
+						},
+						{
+							"key": "logoutTime",
+							"value": "2025-03-01T10:10:00"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get total activity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/totalActivity?userId=user1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"totalActivity"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "user1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get inactive users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/inactiveUsers?days=1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"inactiveUsers"
+					],
+					"query": [
+						{
+							"key": "days",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get monthly activity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/monthlyActivity?userId=user1&month=2025-03",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"monthlyActivity"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "user1"
+						},
+						{
+							"key": "month",
+							"value": "2025-03"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "localhost:8080",
+			"type": "string"
+		}
+	]
+}
