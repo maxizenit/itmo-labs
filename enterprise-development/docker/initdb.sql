@@ -1,0 +1,4 @@
+CREATE DATABASE "user-service-db" ENCODING = 'UTF8' LOCALE_PROVIDER = libc;
+CREATE DATABASE "data-service-db" ENCODING = 'UTF8' LOCALE_PROVIDER = libc;
+CREATE DATABASE "scoring-service-db" ENCODING = 'UTF8' LOCALE_PROVIDER = libc;
+CREATE DATABASE "report-service-db" ENCODING = 'UTF8' LOCALE_PROVIDER = libc;

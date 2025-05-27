@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "ru.itmo.credithistory.userservice.grpc";
+
+message GetUserByTokenRequest {
+  string token = 1;
+}
+
+message GetUserByTokenResponse {
+  string id = 1;
+  string role = 2;
+  string customer_inn = 3;
+}
+
+message GetCreditOrganizationsByIdsRequest {
+  repeated string ids = 1;
+}
+
+message GetCreditOrganizationsByIdsResponse {
+  repeated CreditOrganization credit_organizations = 1;
+}
+
+message CreditOrganization {
+  string id = 1;
+  string inn = 2;
+  string short_name = 3;
+  string full_name = 4;
+}
+
+service UserService {
+  rpc getUserByToken(GetUserByTokenRequest) returns (GetUserByTokenResponse);
+  rpc getCreditOrganizationsByIds(GetCreditOrganizationsByIdsRequest) returns (GetCreditOrganizationsByIdsResponse);
+}

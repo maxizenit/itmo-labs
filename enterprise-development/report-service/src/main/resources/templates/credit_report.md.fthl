@@ -1,0 +1,46 @@
+<#-- credit_report.md.ftl -->
+
+# Кредитный отчёт
+
+**Рейтинг:** ${report.creditRating}
+
+---
+
+## Кредиты
+| Банк | Внешний ID | Сумма | Остаток | Выдан | Закрыт | Активен |
+|------|------------|-------|---------|-------|--------|---------|
+<#list report.credits as c>
+| ${c.bankName}
+| ${c.externalId}
+| ${c.initialAmount}
+| ${c.remainingAmount!"-"}
+| ${c.issuedAt}
+| ${c.repaidAt}
+| ${c.active?string("Да","Нет")} |
+</#list>
+
+<#-- Платежи и просрочки для каждого кредита -->
+<#list report.credits as c>
+### Платежи по кредиту `${c.externalId}`
+| Сумма | Дата |
+|-------|------|
+<#list c.payments as p>
+| ${p.amount} | ${p.paidAt} |
+</#list>
+
+### Просрочки по кредиту `${c.externalId}`
+| Сумма | Начало | Погашение |
+|-------|--------|-----------|
+<#list c.overdue as o>
+| ${o.amount} | ${o.occurredAt} | ${o.repaidAt} |
+</#list>
+</#list>
+
+---
+
+## Заявки на кредиты
+| Банк | Сумма | Дата |
+|------|-------|------|
+<#list report.creditApplications as a>
+| ${a.bankName} | ${a.amount} | ${a.createdAt} |
+</#list>

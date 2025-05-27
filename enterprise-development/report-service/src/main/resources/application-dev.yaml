@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:db
+    username: sa
+    password: password
+  h2:
+    console:
+      enabled: true
+  grpc:
+    client:
+      channels:
+        user-service:
+          address: localhost:9091
+        data-service:
+          address: localhost:9092
+
+server:
+  port: 8084
+
+eureka:
+  instance:
+    prefer-ip-address: true
+
+logging:
+  level:
+    root: debug

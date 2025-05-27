@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:db
+    username: sa
+    password: password
+  h2:
+    console:
+      enabled: true
+  grpc:
+    server:
+      port: 9092
+
+server:
+  port: 8082
+
+eureka:
+  instance:
+    prefer-ip-address: true
+
+logging:
+  level:
+    root: debug

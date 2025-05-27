@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: data-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/data-service-db
+    username: postgres
+    password: postgres
+  grpc:
+    server:
+      port: 9090
+
+server:
+  forward-headers-strategy: framework
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+springdoc:
+  show-actuator: true

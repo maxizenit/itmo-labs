@@ -1,0 +1,170 @@
+databaseChangeLog:
+  - changeSet:
+      id: 0-0-1-1
+      author: Liquibase
+      changes:
+        - createTable:
+            tableName: credit
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_credit
+              - column:
+                  name: external_id
+                  type: varchar
+                  constraints:
+                    nullable: false
+              - column:
+                  name: customer_inn
+                  type: varchar(12)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: credit_organization_id
+                  type: uuid
+                  constraints:
+                    nullable: false
+              - column:
+                  name: type
+                  type: varchar
+                  constraints:
+                    nullable: false
+              - column:
+                  name: initial_amount
+                  type: decimal(18,2)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: remaining_amount
+                  type: decimal(18,2)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: issued_at
+                  type: timestamp
+                  constraints:
+                    nullable: false
+              - column:
+                  name: repaid_at
+                  type: timestamp
+              - column:
+                  name: active
+                  type: boolean
+                  constraints:
+                    nullable: false
+
+        - createTable:
+            tableName: payment
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_payment
+              - column:
+                  name: credit_id
+                  type: uuid
+                  constraints:
+                    nullable: false
+              - column:
+                  name: amount
+                  type: decimal(18,2)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: paid_at
+                  type: timestamp
+                  constraints:
+                    nullable: false
+
+        - addForeignKeyConstraint:
+            baseTableName: payment
+            baseColumnNames: credit_id
+            constraintName: fk_payment_credit
+            referencedTableName: credit
+            referencedColumnNames: id
+            onDelete: CASCADE
+
+        - createTable:
+            tableName: overdue
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_overdue
+              - column:
+                  name: credit_id
+                  type: uuid
+                  constraints:
+                    nullable: false
+              - column:
+                  name: amount
+                  type: decimal(18,2)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: occurred_at
+                  type: timestamp
+                  constraints:
+                    nullable: false
+              - column:
+                  name: repaid_at
+                  type: timestamp
+
+        - addForeignKeyConstraint:
+            baseTableName: overdue
+            baseColumnNames: credit_id
+            constraintName: fk_overdue_credit
+            referencedTableName: credit
+            referencedColumnNames: id
+            onDelete: CASCADE
+
+        - createTable:
+            tableName: credit_application
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_credit_application
+              - column:
+                  name: customer_inn
+                  type: varchar(12)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: credit_organization_id
+                  type: uuid
+                  constraints:
+                    nullable: false
+              - column:
+                  name: credit_type
+                  type: varchar
+                  constraints:
+                    nullable: false
+              - column:
+                  name: amount
+                  type: decimal(18,2)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: created_at
+                  type: timestamp
+                  constraints:
+                    nullable: false
+              - column:
+                  name: status
+                  type: varchar
+                  constraints:
+                    nullable: false

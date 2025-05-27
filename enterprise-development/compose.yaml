@@ -1,0 +1,225 @@
+services:
+  postgres:
+    image: postgres:17
+    ports:
+      - '5432:5432'
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    restart: always
+    volumes:
+      - './docker/initdb.sql:/docker-entrypoint-initdb.d/initdb.sql'
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.9.1
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - '22181:2181'
+    healthcheck:
+      test: [ "CMD", "echo", "ruok", "|", "nc", "localhost", "2181" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 60s
+
+  kafka:
+    image: confluentinc/cp-kafka:7.9.1
+    ports:
+      - '29092:9092'
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "kafka-topics --bootstrap-server localhost:9092 --list || exit 1"
+        ]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    depends_on:
+      zookeeper:
+        condition: service_healthy
+
+  kafka-ui:
+    image: provectuslabs/kafka-ui:v0.7.2
+    ports:
+      - '8092:8080'
+    environment:
+      KAFKA_CLUSTERS_0_NAME: local
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:9092
+    depends_on:
+      kafka:
+        condition: service_healthy
+
+  eureka-service:
+    build: eureka-service
+    ports:
+      - '8761:8761'
+    healthcheck:
+      test: [ "CMD-SHELL", "curl --fail --silent localhost:8761/actuator/health | grep UP || exit 1" ]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    restart: always
+
+  api-gateway-service:
+    build: api-gateway-service
+    ports:
+      - '8080:8080'
+    healthcheck:
+      test: [ "CMD-SHELL", "curl --fail --silent localhost:8080/actuator/health | grep UP || exit 1" ]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    restart: always
+    environment:
+      EUREKA_CLIENT_SERVICE-URL_DEFAULTZONE: http://eureka-service:8761/eureka/
+      SPRING_GRPC_CLIENT_CHANNELS_USER-SERVICE_ADDRESS: user-service:9090
+    depends_on:
+      eureka-service:
+        condition: service_healthy
+      user-service:
+        condition: service_healthy
+
+  user-service:
+    build: user-service
+    ports:
+      - '8081:8080'
+      - '9091:9090'
+    healthcheck:
+      test: [ "CMD-SHELL", "curl --fail --silent localhost:8080/actuator/health | grep UP || exit 1" ]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    restart: always
+    environment:
+      EUREKA_CLIENT_SERVICE-URL_DEFAULTZONE: http://eureka-service:8761/eureka/
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/user-service-db
+      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER}
+      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD}
+      SPRING_KAFKA_BOOTSTRAP-SERVERS: kafka:9092
+    depends_on:
+      eureka-service:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+      kafka:
+        condition: service_healthy
+
+  data-service:
+    build: data-service
+    ports:
+      - '8082:8080'
+      - '9092:9090'
+    healthcheck:
+      test: [ "CMD-SHELL", "curl --fail --silent localhost:8080/actuator/health | grep UP || exit 1" ]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    restart: always
+    environment:
+      EUREKA_CLIENT_SERVICE-URL_DEFAULTZONE: http://eureka-service:8761/eureka/
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/data-service-db
+      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER}
+      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD}
+    depends_on:
+      eureka-service:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+
+  scoring-service:
+    build: scoring-service
+    ports:
+      - '8083:8080'
+    healthcheck:
+      test: [ "CMD-SHELL", "curl --fail --silent localhost:8080/actuator/health | grep UP || exit 1" ]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    restart: always
+    environment:
+      EUREKA_CLIENT_SERVICE-URL_DEFAULTZONE: http://eureka-service:8761/eureka/
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/scoring-service-db
+      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER}
+      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD}
+      SPRING_KAFKA_BOOTSTRAP-SERVERS: kafka:9092
+      SPRING_GRPC_CLIENT_CHANNELS_DATA-SERVICE_ADDRESS: data-service:9090
+    depends_on:
+      eureka-service:
+        condition: service_healthy
+      data-service:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+      kafka:
+        condition: service_healthy
+
+  report-service:
+    build: report-service
+    ports:
+      - '8084:8080'
+    healthcheck:
+      test: [ "CMD-SHELL", "curl --fail --silent localhost:8080/actuator/health | grep UP || exit 1" ]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    restart: always
+    environment:
+      EUREKA_CLIENT_SERVICE-URL_DEFAULTZONE: http://eureka-service:8761/eureka/
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/report-service-db
+      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER}
+      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD}
+      SPRING_KAFKA_BOOTSTRAP-SERVERS: kafka:9092
+      SPRING_GRPC_CLIENT_CHANNELS_USER-SERVICE_ADDRESS: user-service:9090
+      SPRING_GRPC_CLIENT_CHANNELS_DATA-SERVICE_ADDRESS: data-service:9090
+    depends_on:
+      eureka-service:
+        condition: service_healthy
+      user-service:
+        condition: service_healthy
+      data-service:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+      kafka:
+        condition: service_healthy
+
+  notification-service:
+    build: notification-service
+    ports:
+      - '8085:8080'
+    healthcheck:
+      test: [ "CMD-SHELL", "curl --fail --silent localhost:8080/actuator/health | grep UP || exit 1" ]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    restart: always
+    environment:
+      EUREKA_CLIENT_SERVICE-URL_DEFAULTZONE: http://eureka-service:8761/eureka/
+      SPRING_KAFKA_BOOTSTRAP-SERVERS: kafka:9092
+    depends_on:
+      eureka-service:
+        condition: service_healthy
+      kafka:
+        condition: service_healthy

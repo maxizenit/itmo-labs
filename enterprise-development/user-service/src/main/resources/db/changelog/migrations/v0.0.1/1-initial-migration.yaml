@@ -1,0 +1,146 @@
+databaseChangeLog:
+  - changeSet:
+      id: 0-0-1-1
+      author: Liquibase
+      changes:
+        - createTable:
+            tableName: user_
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_user
+              - column:
+                  name: email
+                  type: varchar
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: password
+                  type: varchar
+                  constraints:
+                    nullable: false
+              - column:
+                  name: role
+                  type: varchar
+                  constraints:
+                    nullable: false
+
+        - createTable:
+            tableName: customer
+            columns:
+              - column:
+                  name: user_id
+                  type: uuid
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_customer
+              - column:
+                  name: inn
+                  type: varchar(12)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: last_name
+                  type: varchar
+                  constraints:
+                    nullable: false
+              - column:
+                  name: first_name
+                  type: varchar
+                  constraints:
+                    nullable: false
+              - column:
+                  name: middle_name
+                  type: varchar
+              - column:
+                  name: birthdate
+                  type: date
+                  constraints:
+                    nullable: false
+
+        - addForeignKeyConstraint:
+            baseTableName: customer
+            baseColumnNames: user_id
+            constraintName: fk_customer_user
+            referencedTableName: user_
+            referencedColumnNames: id
+            onDelete: CASCADE
+
+        - createTable:
+            tableName: employee
+            columns:
+              - column:
+                  name: user_id
+                  type: uuid
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_employee
+              - column:
+                  name: last_name
+                  type: varchar
+                  constraints:
+                    nullable: false
+              - column:
+                  name: first_name
+                  type: varchar
+                  constraints:
+                    nullable: false
+              - column:
+                  name: middle_name
+                  type: varchar
+
+        - addForeignKeyConstraint:
+            baseTableName: employee
+            baseColumnNames: user_id
+            constraintName: fk_employee_user
+            referencedTableName: user_
+            referencedColumnNames: id
+            onDelete: CASCADE
+
+        - createTable:
+            tableName: credit_organization
+            columns:
+              - column:
+                  name: user_id
+                  type: uuid
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_credit_organization
+              - column:
+                  name: inn
+                  type: varchar(10)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: short_name
+                  type: varchar
+                  constraints:
+                    nullable: false
+              - column:
+                  name: full_name
+                  type: varchar
+                  constraints:
+                    nullable: false
+              - column:
+                  name: type
+                  type: varchar
+                  constraints:
+                    nullable: false
+
+        - addForeignKeyConstraint:
+            baseTableName: credit_organization
+            baseColumnNames: user_id
+            constraintName: fk_credit_organization_user
+            referencedTableName: user_
+            referencedColumnNames: id
+            onDelete: CASCADE

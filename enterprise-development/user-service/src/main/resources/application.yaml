@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: user-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/user-service-db
+    username: postgres
+    password: postgres
+  kafka:
+    bootstrap-servers: localhost:29092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+  grpc:
+    server:
+      port: 9090
+
+server:
+  forward-headers-strategy: framework
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+springdoc:
+  show-actuator: true
+
+jwt:
+  secret: d4f4c95cc8e22696f4c435f45a66ff1a1b46341a068af7a1e8d5eea5e20eb17430d50782b9310eade664d89ddd6c033974df9a5a1afe01cd46cfd86c02a497638916841b40d387ed32e253354eb002b839d0a0de64aa7681b97d60bea0ad76720c29669246157d7364f8409fefabe76baac8a38cb1ceaa98312ba7bb1ea2e54f26e3192f78774d43e4b9c9f9c742b07310026094336e156bd205345cca6a115d50be3f4044625d36181d285b056f47bca4f6e7e8516f65da311f279725fc35fdde5dd2f680a209d5201b6c85db209e42037932e8657a4df1874aff932f88d1673baa352e287b591c2bc96584684117de3845add0035c8e5d9d4d8f6beb3da10d
+  lifetime: 1d
+
+admin:
+  email: example@example.com

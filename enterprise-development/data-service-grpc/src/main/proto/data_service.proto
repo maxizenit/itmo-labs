@@ -1,0 +1,67 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "ru.itmo.credithistory.dataservice.grpc";
+
+message CustomerStatisticsRequest {
+  string customer_inn = 1;
+  int32 credit_applications_period_days = 2;
+  string min_overdue_amount = 3;
+}
+
+message CustomerStatisticsResponse {
+  string total_initial_amount_for_active_credits = 1;
+  string total_remaining_amount_for_active_credits = 2;
+  int32 active_credits_count = 3;
+  int32 closed_credits_count = 4;
+  int32 credit_applications_by_last_period_count = 5;
+  repeated CustomerStatisticsResponseOverdue overdue = 6;
+}
+
+message CustomerStatisticsResponseOverdue {
+  string amount = 1;
+  int32 days = 2;
+}
+
+message GetCustomerDataRequest {
+  string customer_inn = 1;
+}
+
+message GetCustomerDataResponse {
+  repeated Credit credits = 1;
+  repeated CreditApplication credit_applications = 2;
+}
+
+message Credit {
+  string credit_organization_id = 1;
+  string external_id = 2;
+  string initial_amount = 3;
+  string remaining_amount = 4;
+  string issued_at = 5;
+  string repaid_at = 6;
+  bool active = 7;
+  repeated Payment payments = 8;
+  repeated Overdue overdue = 9;
+}
+
+message Payment {
+  string amount = 1;
+  string paid_at = 2;
+}
+
+message Overdue {
+  string amount = 1;
+  string occurred_at = 2;
+  string repaid_at = 3;
+}
+
+message CreditApplication {
+  string credit_organization_id = 1;
+  string amount = 2;
+  string created_at = 3;
+}
+
+service DataService {
+  rpc getCustomerStatistics(CustomerStatisticsRequest) returns (CustomerStatisticsResponse);
+  rpc getCustomerData(GetCustomerDataRequest) returns (GetCustomerDataResponse);
+}
