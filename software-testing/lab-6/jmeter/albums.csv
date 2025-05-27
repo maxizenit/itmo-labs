@@ -1,0 +1,1001 @@
+id,title,artist,releaseYear,genre,trackCount,albumId
+1,Album 1,B.B. King,1993,Jazz,7,1
+2,Album 2,Miles Davis,1966,Classical,18,2
+3,Album 3,Bob Marley,1962,Blues,10,3
+4,Album 4,Miles Davis,2000,Pop,10,4
+5,Album 5,The Beatles,1975,Reggae,17,5
+6,Album 6,The Beatles,1997,Classical,6,6
+7,Album 7,The Beatles,1962,Hip-Hop,10,7
+8,Album 8,Mozart,1980,Hip-Hop,5,8
+9,Album 9,Miles Davis,1972,Classical,7,9
+10,Album 10,The Beatles,2009,Reggae,17,10
+11,Album 11,Miles Davis,2009,Hip-Hop,8,11
+12,Album 12,Taylor Swift,2012,Classical,6,12
+13,Album 13,Mozart,1991,Electronic,12,13
+14,Album 14,Mozart,1989,Reggae,13,14
+15,Album 15,Miles Davis,2002,Pop,17,15
+16,Album 16,B.B. King,1997,Hip-Hop,5,16
+17,Album 17,Bob Marley,1969,Jazz,15,17
+18,Album 18,Bob Marley,2023,Pop,8,18
+19,Album 19,The Beatles,1972,Jazz,14,19
+20,Album 20,Kendrick Lamar,2004,Classical,7,20
+21,Album 21,Taylor Swift,1973,Classical,16,21
+22,Album 22,The Beatles,1976,Rock,5,22
+23,Album 23,Miles Davis,1991,Reggae,18,23
+24,Album 24,Mozart,1974,Pop,6,24
+25,Album 25,The Beatles,1967,Blues,19,25
+26,Album 26,Daft Punk,1992,Reggae,10,26
+27,Album 27,Miles Davis,2004,Hip-Hop,9,27
+28,Album 28,B.B. King,1964,Electronic,11,28
+29,Album 29,Bob Marley,1978,Hip-Hop,20,29
+30,Album 30,Taylor Swift,1990,Jazz,6,30
+31,Album 31,Taylor Swift,2016,Classical,7,31
+32,Album 32,Bob Marley,1996,Jazz,12,32
+33,Album 33,B.B. King,1967,Jazz,13,33
+34,Album 34,Bob Marley,1971,Rock,6,34
+35,Album 35,B.B. King,2012,Jazz,6,35
+36,Album 36,Daft Punk,2000,Hip-Hop,14,36
+37,Album 37,Miles Davis,1973,Reggae,5,37
+38,Album 38,Kendrick Lamar,1964,Reggae,19,38
+39,Album 39,Taylor Swift,1985,Hip-Hop,20,39
+40,Album 40,The Beatles,1995,Hip-Hop,7,40
+41,Album 41,Taylor Swift,1971,Classical,19,41
+42,Album 42,The Beatles,2004,Hip-Hop,10,42
+43,Album 43,The Beatles,1975,Hip-Hop,6,43
+44,Album 44,B.B. King,1969,Pop,13,44
+45,Album 45,Kendrick Lamar,1974,Classical,8,45
+46,Album 46,Kendrick Lamar,2006,Blues,19,46
+47,Album 47,Taylor Swift,1971,Reggae,9,47
+48,Album 48,Kendrick Lamar,2005,Hip-Hop,13,48
+49,Album 49,Daft Punk,1992,Blues,6,49
+50,Album 50,Daft Punk,2004,Classical,9,50
+51,Album 51,Bob Marley,2023,Reggae,17,51
+52,Album 52,B.B. King,1984,Classical,11,52
+53,Album 53,Daft Punk,1965,Reggae,10,53
+54,Album 54,Kendrick Lamar,2013,Pop,16,54
+55,Album 55,Daft Punk,1979,Reggae,14,55
+56,Album 56,Taylor Swift,2003,Jazz,10,56
+57,Album 57,Daft Punk,2010,Jazz,18,57
+58,Album 58,Kendrick Lamar,2008,Classical,6,58
+59,Album 59,Daft Punk,1992,Hip-Hop,11,59
+60,Album 60,Daft Punk,1985,Electronic,11,60
+61,Album 61,The Beatles,1977,Pop,18,61
+62,Album 62,Miles Davis,1991,Classical,14,62
+63,Album 63,Taylor Swift,2012,Reggae,6,63
+64,Album 64,Bob Marley,1986,Blues,14,64
+65,Album 65,Miles Davis,1971,Blues,9,65
+66,Album 66,The Beatles,2020,Hip-Hop,7,66
+67,Album 67,B.B. King,2002,Hip-Hop,10,67
+68,Album 68,The Beatles,1989,Jazz,18,68
+69,Album 69,Bob Marley,1997,Pop,17,69
+70,Album 70,The Beatles,1994,Hip-Hop,6,70
+71,Album 71,Daft Punk,2017,Reggae,17,71
+72,Album 72,Miles Davis,2008,Pop,11,72
+73,Album 73,Daft Punk,1971,Rock,15,73
+74,Album 74,Miles Davis,2020,Electronic,9,74
+75,Album 75,Mozart,2010,Blues,12,75
+76,Album 76,B.B. King,1994,Pop,17,76
+77,Album 77,Miles Davis,2012,Reggae,6,77
+78,Album 78,Miles Davis,1961,Hip-Hop,20,78
+79,Album 79,The Beatles,2018,Pop,20,79
+80,Album 80,Mozart,2020,Jazz,12,80
+81,Album 81,B.B. King,1973,Hip-Hop,14,81
+82,Album 82,Daft Punk,2005,Blues,15,82
+83,Album 83,Kendrick Lamar,1984,Jazz,7,83
+84,Album 84,Daft Punk,1985,Hip-Hop,20,84
+85,Album 85,Taylor Swift,2019,Blues,9,85
+86,Album 86,Bob Marley,1969,Classical,11,86
+87,Album 87,Kendrick Lamar,1967,Hip-Hop,16,87
+88,Album 88,Daft Punk,1996,Rock,9,88
+89,Album 89,Daft Punk,1968,Pop,15,89
+90,Album 90,Kendrick Lamar,2015,Hip-Hop,7,90
+91,Album 91,Daft Punk,1993,Rock,12,91
+92,Album 92,Taylor Swift,1976,Blues,14,92
+93,Album 93,The Beatles,2007,Classical,14,93
+94,Album 94,Mozart,2012,Hip-Hop,17,94
+95,Album 95,B.B. King,1977,Pop,10,95
+96,Album 96,Miles Davis,1998,Reggae,9,96
+97,Album 97,Taylor Swift,2002,Hip-Hop,17,97
+98,Album 98,Miles Davis,2015,Hip-Hop,17,98
+99,Album 99,Taylor Swift,1993,Jazz,7,99
+100,Album 100,B.B. King,1963,Blues,5,100
+101,Album 101,Mozart,2015,Jazz,16,101
+102,Album 102,The Beatles,1978,Jazz,17,102
+103,Album 103,Daft Punk,2006,Pop,8,103
+104,Album 104,Daft Punk,1977,Electronic,17,104
+105,Album 105,Miles Davis,2008,Blues,13,105
+106,Album 106,Mozart,2007,Classical,14,106
+107,Album 107,Kendrick Lamar,1989,Reggae,10,107
+108,Album 108,B.B. King,2011,Rock,14,108
+109,Album 109,Miles Davis,1999,Jazz,10,109
+110,Album 110,Miles Davis,2003,Rock,18,110
+111,Album 111,Kendrick Lamar,1979,Pop,8,111
+112,Album 112,Bob Marley,1989,Rock,10,112
+113,Album 113,Bob Marley,1996,Electronic,14,113
+114,Album 114,B.B. King,2016,Jazz,10,114
+115,Album 115,Kendrick Lamar,2017,Rock,14,115
+116,Album 116,Bob Marley,1979,Rock,10,116
+117,Album 117,Daft Punk,1966,Rock,20,117
+118,Album 118,B.B. King,1992,Jazz,12,118
+119,Album 119,Mozart,2003,Blues,5,119
+120,Album 120,Taylor Swift,1990,Jazz,7,120
+121,Album 121,Kendrick Lamar,1996,Pop,15,121
+122,Album 122,Mozart,1977,Pop,6,122
+123,Album 123,B.B. King,1982,Pop,20,123
+124,Album 124,Miles Davis,2021,Electronic,13,124
+125,Album 125,Daft Punk,1989,Reggae,20,125
+126,Album 126,Kendrick Lamar,1971,Classical,10,126
+127,Album 127,Bob Marley,1994,Electronic,14,127
+128,Album 128,Bob Marley,1982,Jazz,16,128
+129,Album 129,Mozart,1995,Pop,16,129
+130,Album 130,Kendrick Lamar,2001,Electronic,16,130
+131,Album 131,The Beatles,2021,Classical,10,131
+132,Album 132,Kendrick Lamar,2002,Electronic,14,132
+133,Album 133,Mozart,1970,Electronic,17,133
+134,Album 134,Kendrick Lamar,1967,Reggae,11,134
+135,Album 135,B.B. King,1981,Classical,8,135
+136,Album 136,Taylor Swift,1998,Jazz,14,136
+137,Album 137,Kendrick Lamar,1960,Rock,7,137
+138,Album 138,Daft Punk,2020,Pop,8,138
+139,Album 139,Bob Marley,1990,Jazz,10,139
+140,Album 140,Kendrick Lamar,2010,Rock,5,140
+141,Album 141,Bob Marley,1969,Electronic,19,141
+142,Album 142,Miles Davis,2001,Hip-Hop,17,142
+143,Album 143,Bob Marley,1960,Hip-Hop,12,143
+144,Album 144,The Beatles,1981,Blues,17,144
+145,Album 145,B.B. King,1960,Jazz,7,145
+146,Album 146,Kendrick Lamar,2000,Reggae,15,146
+147,Album 147,B.B. King,2004,Jazz,16,147
+148,Album 148,Bob Marley,2015,Classical,16,148
+149,Album 149,Taylor Swift,1998,Hip-Hop,16,149
+150,Album 150,Mozart,1989,Jazz,16,150
+151,Album 151,B.B. King,2013,Reggae,14,151
+152,Album 152,Daft Punk,2015,Rock,8,152
+153,Album 153,Daft Punk,2012,Rock,6,153
+154,Album 154,Bob Marley,1995,Classical,15,154
+155,Album 155,Miles Davis,1964,Hip-Hop,10,155
+156,Album 156,Bob Marley,1965,Reggae,14,156
+157,Album 157,Daft Punk,1979,Reggae,9,157
+158,Album 158,Bob Marley,1986,Hip-Hop,20,158
+159,Album 159,Kendrick Lamar,1982,Blues,7,159
+160,Album 160,Daft Punk,2001,Hip-Hop,17,160
+161,Album 161,Mozart,1993,Blues,6,161
+162,Album 162,Miles Davis,1966,Classical,10,162
+163,Album 163,Bob Marley,2013,Pop,20,163
+164,Album 164,B.B. King,1996,Hip-Hop,6,164
+165,Album 165,B.B. King,1975,Classical,16,165
+166,Album 166,Miles Davis,1970,Reggae,20,166
+167,Album 167,Miles Davis,1984,Classical,10,167
+168,Album 168,Taylor Swift,2023,Reggae,8,168
+169,Album 169,Miles Davis,2012,Pop,12,169
+170,Album 170,Daft Punk,2003,Rock,20,170
+171,Album 171,Mozart,2013,Blues,8,171
+172,Album 172,Miles Davis,1975,Jazz,9,172
+173,Album 173,Miles Davis,2002,Hip-Hop,11,173
+174,Album 174,Bob Marley,2011,Electronic,14,174
+175,Album 175,Mozart,1975,Rock,13,175
+176,Album 176,Kendrick Lamar,1998,Classical,9,176
+177,Album 177,The Beatles,1976,Pop,13,177
+178,Album 178,Kendrick Lamar,1998,Reggae,5,178
+179,Album 179,B.B. King,2005,Pop,10,179
+180,Album 180,Bob Marley,1962,Blues,19,180
+181,Album 181,B.B. King,2011,Blues,16,181
+182,Album 182,Daft Punk,1981,Pop,13,182
+183,Album 183,Taylor Swift,1964,Classical,19,183
+184,Album 184,Bob Marley,1996,Classical,12,184
+185,Album 185,Mozart,1999,Reggae,16,185
+186,Album 186,The Beatles,2011,Hip-Hop,20,186
+187,Album 187,Mozart,1985,Blues,14,187
+188,Album 188,Bob Marley,2017,Blues,12,188
+189,Album 189,Mozart,1978,Rock,16,189
+190,Album 190,Mozart,1963,Electronic,17,190
+191,Album 191,Miles Davis,1973,Electronic,18,191
+192,Album 192,Daft Punk,1978,Reggae,18,192
+193,Album 193,B.B. King,1960,Blues,8,193
+194,Album 194,B.B. King,1998,Reggae,13,194
+195,Album 195,Bob Marley,1975,Classical,9,195
+196,Album 196,The Beatles,1964,Hip-Hop,10,196
+197,Album 197,The Beatles,1988,Electronic,6,197
+198,Album 198,Bob Marley,1971,Pop,8,198
+199,Album 199,Kendrick Lamar,1997,Jazz,14,199
+200,Album 200,Bob Marley,1965,Pop,12,200
+201,Album 201,Mozart,1969,Electronic,17,201
+202,Album 202,Bob Marley,2007,Classical,18,202
+203,Album 203,B.B. King,1991,Hip-Hop,14,203
+204,Album 204,Mozart,1988,Pop,12,204
+205,Album 205,Mozart,1988,Classical,9,205
+206,Album 206,Daft Punk,1962,Blues,11,206
+207,Album 207,Daft Punk,2014,Rock,8,207
+208,Album 208,Taylor Swift,1987,Jazz,19,208
+209,Album 209,The Beatles,1978,Hip-Hop,12,209
+210,Album 210,The Beatles,1997,Hip-Hop,14,210
+211,Album 211,Taylor Swift,1977,Jazz,18,211
+212,Album 212,B.B. King,1985,Blues,13,212
+213,Album 213,Bob Marley,1963,Hip-Hop,9,213
+214,Album 214,Kendrick Lamar,1982,Pop,6,214
+215,Album 215,B.B. King,2003,Rock,9,215
+216,Album 216,Kendrick Lamar,1972,Electronic,5,216
+217,Album 217,Miles Davis,1963,Classical,15,217
+218,Album 218,Bob Marley,2019,Hip-Hop,7,218
+219,Album 219,Mozart,1978,Classical,11,219
+220,Album 220,The Beatles,2016,Rock,17,220
+221,Album 221,Taylor Swift,1990,Electronic,16,221
+222,Album 222,Taylor Swift,2009,Blues,5,222
+223,Album 223,Taylor Swift,1996,Hip-Hop,7,223
+224,Album 224,Miles Davis,2000,Hip-Hop,7,224
+225,Album 225,Miles Davis,2015,Hip-Hop,19,225
+226,Album 226,The Beatles,1960,Blues,12,226
+227,Album 227,Bob Marley,1965,Pop,12,227
+228,Album 228,B.B. King,2002,Rock,13,228
+229,Album 229,Bob Marley,1979,Reggae,10,229
+230,Album 230,The Beatles,2013,Hip-Hop,13,230
+231,Album 231,B.B. King,1978,Classical,17,231
+232,Album 232,The Beatles,2005,Pop,12,232
+233,Album 233,Miles Davis,2016,Electronic,15,233
+234,Album 234,Bob Marley,1967,Hip-Hop,20,234
+235,Album 235,Bob Marley,2015,Hip-Hop,17,235
+236,Album 236,The Beatles,1992,Pop,8,236
+237,Album 237,The Beatles,1971,Hip-Hop,12,237
+238,Album 238,Bob Marley,2016,Electronic,12,238
+239,Album 239,Kendrick Lamar,2008,Jazz,11,239
+240,Album 240,Bob Marley,1985,Electronic,7,240
+241,Album 241,Bob Marley,2011,Rock,16,241
+242,Album 242,B.B. King,1976,Electronic,19,242
+243,Album 243,Taylor Swift,1968,Blues,13,243
+244,Album 244,Taylor Swift,1986,Classical,12,244
+245,Album 245,Taylor Swift,2009,Jazz,18,245
+246,Album 246,Daft Punk,1974,Classical,11,246
+247,Album 247,Bob Marley,1980,Classical,18,247
+248,Album 248,Taylor Swift,1965,Classical,20,248
+249,Album 249,B.B. King,1980,Rock,20,249
+250,Album 250,Taylor Swift,2019,Rock,13,250
+251,Album 251,Daft Punk,1997,Reggae,12,251
+252,Album 252,Bob Marley,2013,Jazz,19,252
+253,Album 253,The Beatles,1984,Pop,16,253
+254,Album 254,Miles Davis,1981,Reggae,7,254
+255,Album 255,B.B. King,2003,Rock,16,255
+256,Album 256,The Beatles,1969,Pop,11,256
+257,Album 257,Daft Punk,2002,Jazz,8,257
+258,Album 258,Mozart,1989,Classical,8,258
+259,Album 259,Daft Punk,1991,Hip-Hop,8,259
+260,Album 260,Mozart,2016,Blues,11,260
+261,Album 261,Miles Davis,1977,Classical,18,261
+262,Album 262,Kendrick Lamar,1968,Hip-Hop,19,262
+263,Album 263,Taylor Swift,1982,Blues,12,263
+264,Album 264,Bob Marley,1992,Pop,17,264
+265,Album 265,Mozart,1978,Hip-Hop,10,265
+266,Album 266,Miles Davis,1995,Rock,14,266
+267,Album 267,Bob Marley,2005,Reggae,13,267
+268,Album 268,Kendrick Lamar,1960,Electronic,17,268
+269,Album 269,Bob Marley,2019,Reggae,17,269
+270,Album 270,Mozart,1973,Reggae,17,270
+271,Album 271,The Beatles,2018,Electronic,19,271
+272,Album 272,Kendrick Lamar,1970,Blues,15,272
+273,Album 273,B.B. King,1990,Blues,18,273
+274,Album 274,Kendrick Lamar,1989,Jazz,6,274
+275,Album 275,Bob Marley,1985,Reggae,15,275
+276,Album 276,Bob Marley,1975,Electronic,7,276
+277,Album 277,Bob Marley,2007,Hip-Hop,9,277
+278,Album 278,Taylor Swift,2014,Jazz,5,278
+279,Album 279,Kendrick Lamar,1993,Jazz,15,279
+280,Album 280,Bob Marley,1968,Pop,8,280
+281,Album 281,Bob Marley,1989,Electronic,12,281
+282,Album 282,Daft Punk,2010,Pop,6,282
+283,Album 283,B.B. King,2014,Electronic,17,283
+284,Album 284,Miles Davis,1966,Reggae,11,284
+285,Album 285,Kendrick Lamar,2020,Hip-Hop,18,285
+286,Album 286,Daft Punk,2014,Hip-Hop,18,286
+287,Album 287,Bob Marley,1981,Pop,5,287
+288,Album 288,Taylor Swift,2019,Hip-Hop,14,288
+289,Album 289,Mozart,1964,Hip-Hop,20,289
+290,Album 290,Taylor Swift,2006,Classical,9,290
+291,Album 291,Taylor Swift,1970,Rock,8,291
+292,Album 292,Miles Davis,2005,Blues,20,292
+293,Album 293,Mozart,1963,Rock,18,293
+294,Album 294,Bob Marley,1973,Hip-Hop,19,294
+295,Album 295,Bob Marley,1984,Reggae,18,295
+296,Album 296,Mozart,1966,Jazz,16,296
+297,Album 297,Miles Davis,1969,Electronic,19,297
+298,Album 298,Bob Marley,2007,Reggae,17,298
+299,Album 299,Bob Marley,1978,Hip-Hop,12,299
+300,Album 300,Bob Marley,1970,Classical,15,300
+301,Album 301,Mozart,2016,Classical,9,301
+302,Album 302,Mozart,2020,Jazz,9,302
+303,Album 303,Daft Punk,1965,Reggae,19,303
+304,Album 304,The Beatles,1970,Blues,20,304
+305,Album 305,The Beatles,2015,Electronic,10,305
+306,Album 306,B.B. King,1985,Reggae,9,306
+307,Album 307,Bob Marley,1981,Jazz,10,307
+308,Album 308,Mozart,1996,Reggae,6,308
+309,Album 309,B.B. King,2001,Classical,12,309
+310,Album 310,Mozart,1970,Jazz,19,310
+311,Album 311,B.B. King,1971,Hip-Hop,13,311
+312,Album 312,The Beatles,1989,Hip-Hop,13,312
+313,Album 313,Taylor Swift,2013,Electronic,13,313
+314,Album 314,Miles Davis,1977,Rock,6,314
+315,Album 315,The Beatles,2010,Rock,8,315
+316,Album 316,Mozart,1963,Classical,11,316
+317,Album 317,The Beatles,2012,Classical,10,317
+318,Album 318,Bob Marley,2012,Reggae,11,318
+319,Album 319,Taylor Swift,1965,Pop,5,319
+320,Album 320,Kendrick Lamar,2020,Pop,5,320
+321,Album 321,The Beatles,2015,Reggae,9,321
+322,Album 322,Taylor Swift,1973,Reggae,9,322
+323,Album 323,B.B. King,1993,Hip-Hop,11,323
+324,Album 324,Kendrick Lamar,1999,Hip-Hop,7,324
+325,Album 325,Daft Punk,2018,Rock,13,325
+326,Album 326,Bob Marley,1986,Electronic,9,326
+327,Album 327,Daft Punk,1977,Hip-Hop,14,327
+328,Album 328,Taylor Swift,2021,Hip-Hop,9,328
+329,Album 329,Daft Punk,1973,Reggae,11,329
+330,Album 330,Taylor Swift,1961,Electronic,11,330
+331,Album 331,Kendrick Lamar,2012,Jazz,5,331
+332,Album 332,Kendrick Lamar,2005,Electronic,5,332
+333,Album 333,Daft Punk,1999,Blues,15,333
+334,Album 334,B.B. King,1962,Reggae,7,334
+335,Album 335,The Beatles,1989,Electronic,14,335
+336,Album 336,B.B. King,2006,Pop,12,336
+337,Album 337,Kendrick Lamar,1962,Classical,13,337
+338,Album 338,B.B. King,2015,Jazz,8,338
+339,Album 339,Bob Marley,1971,Blues,17,339
+340,Album 340,Miles Davis,1967,Classical,12,340
+341,Album 341,Bob Marley,1983,Reggae,11,341
+342,Album 342,Taylor Swift,2011,Classical,16,342
+343,Album 343,Bob Marley,2015,Hip-Hop,7,343
+344,Album 344,Bob Marley,1979,Pop,18,344
+345,Album 345,Kendrick Lamar,1967,Jazz,12,345
+346,Album 346,Miles Davis,1994,Hip-Hop,9,346
+347,Album 347,Taylor Swift,2022,Rock,7,347
+348,Album 348,The Beatles,2022,Pop,14,348
+349,Album 349,Daft Punk,2023,Classical,13,349
+350,Album 350,Bob Marley,1965,Pop,9,350
+351,Album 351,B.B. King,1973,Electronic,9,351
+352,Album 352,Mozart,2005,Classical,16,352
+353,Album 353,Taylor Swift,2010,Classical,13,353
+354,Album 354,Taylor Swift,1974,Jazz,6,354
+355,Album 355,B.B. King,1963,Hip-Hop,7,355
+356,Album 356,B.B. King,1967,Hip-Hop,18,356
+357,Album 357,Kendrick Lamar,2021,Electronic,10,357
+358,Album 358,Miles Davis,2022,Classical,17,358
+359,Album 359,Daft Punk,2010,Blues,15,359
+360,Album 360,Taylor Swift,1999,Rock,18,360
+361,Album 361,B.B. King,1963,Jazz,19,361
+362,Album 362,Taylor Swift,1960,Rock,17,362
+363,Album 363,Daft Punk,1980,Rock,20,363
+364,Album 364,Kendrick Lamar,1966,Classical,9,364
+365,Album 365,Miles Davis,1964,Pop,5,365
+366,Album 366,The Beatles,1970,Reggae,17,366
+367,Album 367,Miles Davis,1982,Rock,7,367
+368,Album 368,Bob Marley,1973,Blues,8,368
+369,Album 369,Mozart,1970,Electronic,10,369
+370,Album 370,Bob Marley,2005,Classical,18,370
+371,Album 371,Bob Marley,1964,Hip-Hop,16,371
+372,Album 372,Daft Punk,1966,Classical,14,372
+373,Album 373,The Beatles,1982,Rock,5,373
+374,Album 374,Taylor Swift,2014,Blues,14,374
+375,Album 375,Daft Punk,1966,Classical,6,375
+376,Album 376,Miles Davis,2013,Hip-Hop,11,376
+377,Album 377,Daft Punk,2000,Electronic,7,377
+378,Album 378,Taylor Swift,1985,Blues,6,378
+379,Album 379,Mozart,1984,Reggae,12,379
+380,Album 380,Bob Marley,1990,Rock,7,380
+381,Album 381,Bob Marley,2016,Classical,9,381
+382,Album 382,The Beatles,2007,Hip-Hop,11,382
+383,Album 383,The Beatles,1986,Reggae,8,383
+384,Album 384,Kendrick Lamar,1973,Electronic,14,384
+385,Album 385,Miles Davis,1980,Hip-Hop,6,385
+386,Album 386,Taylor Swift,1962,Rock,11,386
+387,Album 387,Bob Marley,2013,Hip-Hop,7,387
+388,Album 388,The Beatles,1989,Reggae,16,388
+389,Album 389,Mozart,1993,Blues,19,389
+390,Album 390,Miles Davis,2010,Reggae,17,390
+391,Album 391,The Beatles,2002,Reggae,13,391
+392,Album 392,The Beatles,1998,Rock,8,392
+393,Album 393,Mozart,2005,Jazz,20,393
+394,Album 394,Kendrick Lamar,1972,Classical,20,394
+395,Album 395,Bob Marley,1962,Pop,15,395
+396,Album 396,Bob Marley,1976,Jazz,5,396
+397,Album 397,B.B. King,1994,Jazz,12,397
+398,Album 398,The Beatles,1999,Classical,16,398
+399,Album 399,Mozart,1976,Classical,6,399
+400,Album 400,Daft Punk,1967,Jazz,17,400
+401,Album 401,Bob Marley,1981,Electronic,18,401
+402,Album 402,B.B. King,2015,Jazz,20,402
+403,Album 403,The Beatles,1992,Reggae,12,403
+404,Album 404,Miles Davis,1997,Reggae,6,404
+405,Album 405,Daft Punk,1988,Blues,13,405
+406,Album 406,B.B. King,2008,Classical,11,406
+407,Album 407,The Beatles,1998,Electronic,5,407
+408,Album 408,Miles Davis,1965,Rock,15,408
+409,Album 409,The Beatles,1987,Jazz,11,409
+410,Album 410,Kendrick Lamar,2012,Rock,6,410
+411,Album 411,Daft Punk,1997,Hip-Hop,12,411
+412,Album 412,Kendrick Lamar,2014,Reggae,11,412
+413,Album 413,Taylor Swift,2009,Blues,19,413
+414,Album 414,Kendrick Lamar,1985,Pop,6,414
+415,Album 415,The Beatles,1977,Rock,19,415
+416,Album 416,The Beatles,1969,Jazz,19,416
+417,Album 417,Mozart,1994,Reggae,11,417
+418,Album 418,Mozart,2012,Blues,9,418
+419,Album 419,B.B. King,2004,Rock,5,419
+420,Album 420,Daft Punk,2023,Rock,10,420
+421,Album 421,Miles Davis,1972,Reggae,10,421
+422,Album 422,Daft Punk,2006,Hip-Hop,16,422
+423,Album 423,Mozart,2020,Pop,16,423
+424,Album 424,B.B. King,1974,Rock,13,424
+425,Album 425,B.B. King,1994,Blues,5,425
+426,Album 426,Miles Davis,2006,Blues,19,426
+427,Album 427,Kendrick Lamar,1986,Jazz,18,427
+428,Album 428,Kendrick Lamar,1999,Blues,19,428
+429,Album 429,Daft Punk,1980,Pop,19,429
+430,Album 430,Miles Davis,2014,Electronic,9,430
+431,Album 431,B.B. King,1960,Reggae,7,431
+432,Album 432,Kendrick Lamar,2000,Pop,18,432
+433,Album 433,The Beatles,1985,Pop,14,433
+434,Album 434,Taylor Swift,1982,Electronic,20,434
+435,Album 435,Taylor Swift,2023,Hip-Hop,11,435
+436,Album 436,B.B. King,1990,Hip-Hop,15,436
+437,Album 437,Kendrick Lamar,1975,Electronic,20,437
+438,Album 438,Mozart,2001,Pop,18,438
+439,Album 439,Bob Marley,1975,Rock,7,439
+440,Album 440,B.B. King,2008,Reggae,12,440
+441,Album 441,The Beatles,1974,Blues,19,441
+442,Album 442,Kendrick Lamar,1993,Rock,6,442
+443,Album 443,Taylor Swift,1996,Electronic,19,443
+444,Album 444,Taylor Swift,2023,Electronic,7,444
+445,Album 445,Taylor Swift,2023,Pop,13,445
+446,Album 446,Daft Punk,1980,Rock,7,446
+447,Album 447,Mozart,1962,Classical,14,447
+448,Album 448,Daft Punk,1991,Hip-Hop,9,448
+449,Album 449,Bob Marley,1977,Classical,19,449
+450,Album 450,Bob Marley,2021,Classical,20,450
+451,Album 451,Taylor Swift,2019,Jazz,19,451
+452,Album 452,Taylor Swift,2015,Jazz,8,452
+453,Album 453,Kendrick Lamar,1991,Electronic,9,453
+454,Album 454,Daft Punk,2006,Electronic,13,454
+455,Album 455,Mozart,2007,Pop,20,455
+456,Album 456,The Beatles,1989,Pop,12,456
+457,Album 457,Bob Marley,1969,Pop,6,457
+458,Album 458,Miles Davis,1989,Jazz,7,458
+459,Album 459,B.B. King,2006,Classical,7,459
+460,Album 460,Mozart,1979,Electronic,13,460
+461,Album 461,Bob Marley,2015,Pop,10,461
+462,Album 462,Daft Punk,1986,Blues,9,462
+463,Album 463,Miles Davis,1989,Electronic,7,463
+464,Album 464,Bob Marley,1983,Electronic,5,464
+465,Album 465,B.B. King,2011,Hip-Hop,15,465
+466,Album 466,Mozart,2022,Rock,18,466
+467,Album 467,Daft Punk,1994,Blues,7,467
+468,Album 468,Mozart,1966,Electronic,12,468
+469,Album 469,Mozart,1981,Classical,17,469
+470,Album 470,Taylor Swift,1973,Pop,18,470
+471,Album 471,Mozart,2007,Jazz,7,471
+472,Album 472,Daft Punk,2007,Rock,8,472
+473,Album 473,The Beatles,2009,Electronic,14,473
+474,Album 474,Mozart,1983,Rock,16,474
+475,Album 475,Taylor Swift,2006,Jazz,18,475
+476,Album 476,Taylor Swift,2004,Blues,10,476
+477,Album 477,Daft Punk,1970,Hip-Hop,8,477
+478,Album 478,Taylor Swift,2005,Rock,17,478
+479,Album 479,Daft Punk,2002,Pop,13,479
+480,Album 480,Taylor Swift,1992,Classical,17,480
+481,Album 481,Daft Punk,1995,Classical,10,481
+482,Album 482,Mozart,1981,Blues,19,482
+483,Album 483,Mozart,2022,Classical,10,483
+484,Album 484,Daft Punk,1998,Jazz,9,484
+485,Album 485,Taylor Swift,1988,Jazz,5,485
+486,Album 486,Bob Marley,2021,Pop,11,486
+487,Album 487,Daft Punk,2020,Electronic,17,487
+488,Album 488,Mozart,2013,Reggae,17,488
+489,Album 489,Taylor Swift,2006,Blues,11,489
+490,Album 490,Kendrick Lamar,1989,Reggae,12,490
+491,Album 491,Kendrick Lamar,2014,Classical,5,491
+492,Album 492,Kendrick Lamar,2023,Pop,18,492
+493,Album 493,Miles Davis,1985,Pop,20,493
+494,Album 494,Kendrick Lamar,2011,Reggae,18,494
+495,Album 495,Mozart,1989,Rock,20,495
+496,Album 496,The Beatles,1964,Jazz,11,496
+497,Album 497,Kendrick Lamar,1963,Jazz,12,497
+498,Album 498,Miles Davis,1995,Pop,20,498
+499,Album 499,Mozart,1987,Classical,20,499
+500,Album 500,Mozart,2001,Reggae,5,500
+501,Album 501,Bob Marley,1975,Reggae,18,501
+502,Album 502,Bob Marley,1987,Jazz,6,502
+503,Album 503,Bob Marley,1963,Classical,13,503
+504,Album 504,The Beatles,1985,Electronic,20,504
+505,Album 505,Bob Marley,1980,Classical,18,505
+506,Album 506,Miles Davis,1987,Pop,14,506
+507,Album 507,Bob Marley,1980,Pop,11,507
+508,Album 508,Daft Punk,1965,Electronic,14,508
+509,Album 509,Kendrick Lamar,2008,Classical,13,509
+510,Album 510,Mozart,2019,Hip-Hop,20,510
+511,Album 511,Mozart,1964,Jazz,6,511
+512,Album 512,Kendrick Lamar,1966,Classical,20,512
+513,Album 513,Taylor Swift,1980,Hip-Hop,9,513
+514,Album 514,Taylor Swift,2022,Pop,16,514
+515,Album 515,Taylor Swift,2010,Reggae,8,515
+516,Album 516,Daft Punk,2013,Classical,18,516
+517,Album 517,The Beatles,1970,Electronic,13,517
+518,Album 518,The Beatles,1975,Hip-Hop,9,518
+519,Album 519,Taylor Swift,1974,Electronic,6,519
+520,Album 520,Daft Punk,1966,Classical,18,520
+521,Album 521,Bob Marley,1981,Jazz,19,521
+522,Album 522,Mozart,1986,Blues,19,522
+523,Album 523,Bob Marley,2018,Classical,7,523
+524,Album 524,Miles Davis,2021,Hip-Hop,7,524
+525,Album 525,Mozart,1980,Jazz,19,525
+526,Album 526,Miles Davis,2006,Hip-Hop,13,526
+527,Album 527,Miles Davis,1991,Blues,7,527
+528,Album 528,B.B. King,2005,Blues,11,528
+529,Album 529,Mozart,1969,Jazz,19,529
+530,Album 530,The Beatles,2017,Jazz,18,530
+531,Album 531,Mozart,1983,Hip-Hop,11,531
+532,Album 532,Miles Davis,2013,Rock,8,532
+533,Album 533,Bob Marley,2004,Electronic,9,533
+534,Album 534,B.B. King,2014,Pop,18,534
+535,Album 535,Taylor Swift,1967,Reggae,6,535
+536,Album 536,Mozart,1969,Hip-Hop,19,536
+537,Album 537,Kendrick Lamar,1974,Blues,13,537
+538,Album 538,The Beatles,1995,Hip-Hop,15,538
+539,Album 539,Kendrick Lamar,2005,Jazz,14,539
+540,Album 540,Taylor Swift,1985,Reggae,20,540
+541,Album 541,Miles Davis,1973,Classical,9,541
+542,Album 542,Taylor Swift,2007,Pop,7,542
+543,Album 543,Taylor Swift,2019,Electronic,13,543
+544,Album 544,Mozart,1983,Rock,20,544
+545,Album 545,Mozart,1968,Classical,15,545
+546,Album 546,B.B. King,1967,Pop,8,546
+547,Album 547,Miles Davis,2010,Rock,8,547
+548,Album 548,Kendrick Lamar,2016,Electronic,8,548
+549,Album 549,Daft Punk,1996,Electronic,6,549
+550,Album 550,Miles Davis,1995,Electronic,12,550
+551,Album 551,Mozart,2021,Reggae,18,551
+552,Album 552,Taylor Swift,1970,Rock,14,552
+553,Album 553,The Beatles,1982,Blues,6,553
+554,Album 554,Mozart,2002,Hip-Hop,19,554
+555,Album 555,Bob Marley,2009,Classical,12,555
+556,Album 556,The Beatles,2014,Pop,19,556
+557,Album 557,Mozart,2018,Electronic,5,557
+558,Album 558,B.B. King,1964,Blues,15,558
+559,Album 559,Mozart,1979,Classical,6,559
+560,Album 560,Daft Punk,2017,Electronic,14,560
+561,Album 561,The Beatles,1974,Classical,16,561
+562,Album 562,Taylor Swift,1987,Electronic,17,562
+563,Album 563,B.B. King,1982,Blues,15,563
+564,Album 564,Kendrick Lamar,1995,Reggae,9,564
+565,Album 565,The Beatles,1971,Hip-Hop,6,565
+566,Album 566,Mozart,1995,Reggae,7,566
+567,Album 567,Miles Davis,1986,Reggae,19,567
+568,Album 568,Taylor Swift,1978,Pop,17,568
+569,Album 569,Taylor Swift,2005,Hip-Hop,20,569
+570,Album 570,Miles Davis,2021,Electronic,5,570
+571,Album 571,Mozart,1968,Jazz,11,571
+572,Album 572,B.B. King,1998,Reggae,10,572
+573,Album 573,Miles Davis,1988,Hip-Hop,20,573
+574,Album 574,Taylor Swift,1975,Jazz,19,574
+575,Album 575,Taylor Swift,2000,Hip-Hop,8,575
+576,Album 576,The Beatles,1977,Electronic,9,576
+577,Album 577,Bob Marley,1994,Electronic,14,577
+578,Album 578,B.B. King,2005,Classical,17,578
+579,Album 579,Kendrick Lamar,2005,Electronic,11,579
+580,Album 580,Taylor Swift,2023,Blues,8,580
+581,Album 581,Bob Marley,2019,Hip-Hop,19,581
+582,Album 582,Miles Davis,1983,Blues,7,582
+583,Album 583,B.B. King,1963,Jazz,20,583
+584,Album 584,Kendrick Lamar,1975,Jazz,10,584
+585,Album 585,Miles Davis,1986,Electronic,7,585
+586,Album 586,B.B. King,1998,Jazz,19,586
+587,Album 587,Bob Marley,2015,Electronic,8,587
+588,Album 588,B.B. King,1964,Classical,13,588
+589,Album 589,Taylor Swift,1994,Blues,18,589
+590,Album 590,Taylor Swift,1982,Jazz,17,590
+591,Album 591,The Beatles,2005,Blues,18,591
+592,Album 592,Taylor Swift,2017,Reggae,18,592
+593,Album 593,B.B. King,2009,Blues,19,593
+594,Album 594,Daft Punk,1988,Hip-Hop,17,594
+595,Album 595,Miles Davis,2002,Pop,13,595
+596,Album 596,B.B. King,1978,Hip-Hop,19,596
+597,Album 597,Miles Davis,1987,Classical,18,597
+598,Album 598,Daft Punk,2014,Rock,8,598
+599,Album 599,Kendrick Lamar,2023,Jazz,10,599
+600,Album 600,Miles Davis,2007,Rock,9,600
+601,Album 601,Mozart,2000,Electronic,15,601
+602,Album 602,Bob Marley,1967,Blues,13,602
+603,Album 603,Taylor Swift,1999,Blues,5,603
+604,Album 604,Mozart,2013,Jazz,18,604
+605,Album 605,The Beatles,1969,Classical,5,605
+606,Album 606,B.B. King,1997,Hip-Hop,6,606
+607,Album 607,Mozart,1981,Jazz,7,607
+608,Album 608,Kendrick Lamar,1983,Jazz,17,608
+609,Album 609,Miles Davis,1960,Electronic,11,609
+610,Album 610,The Beatles,2011,Jazz,20,610
+611,Album 611,Miles Davis,2013,Reggae,14,611
+612,Album 612,Kendrick Lamar,2020,Blues,11,612
+613,Album 613,Taylor Swift,1972,Jazz,15,613
+614,Album 614,The Beatles,2003,Pop,20,614
+615,Album 615,Mozart,2000,Pop,18,615
+616,Album 616,The Beatles,1971,Electronic,12,616
+617,Album 617,Daft Punk,2022,Reggae,18,617
+618,Album 618,Daft Punk,2012,Electronic,17,618
+619,Album 619,Taylor Swift,1966,Jazz,5,619
+620,Album 620,Daft Punk,1999,Classical,14,620
+621,Album 621,B.B. King,2003,Hip-Hop,5,621
+622,Album 622,Daft Punk,2007,Pop,14,622
+623,Album 623,Taylor Swift,1964,Hip-Hop,13,623
+624,Album 624,The Beatles,2007,Rock,10,624
+625,Album 625,Daft Punk,1990,Electronic,14,625
+626,Album 626,B.B. King,2023,Pop,20,626
+627,Album 627,Daft Punk,1970,Classical,11,627
+628,Album 628,Daft Punk,1978,Classical,9,628
+629,Album 629,Daft Punk,1961,Blues,10,629
+630,Album 630,The Beatles,2004,Reggae,16,630
+631,Album 631,Miles Davis,1994,Rock,13,631
+632,Album 632,Kendrick Lamar,1993,Hip-Hop,16,632
+633,Album 633,The Beatles,1975,Hip-Hop,6,633
+634,Album 634,Kendrick Lamar,1985,Blues,18,634
+635,Album 635,Kendrick Lamar,1967,Pop,11,635
+636,Album 636,Taylor Swift,1982,Jazz,7,636
+637,Album 637,The Beatles,2002,Electronic,8,637
+638,Album 638,Bob Marley,1990,Jazz,9,638
+639,Album 639,Daft Punk,2007,Blues,15,639
+640,Album 640,Taylor Swift,2020,Reggae,11,640
+641,Album 641,Daft Punk,2006,Classical,6,641
+642,Album 642,Mozart,1993,Jazz,12,642
+643,Album 643,The Beatles,2010,Blues,20,643
+644,Album 644,Kendrick Lamar,1991,Rock,19,644
+645,Album 645,Bob Marley,1974,Reggae,14,645
+646,Album 646,B.B. King,1974,Reggae,19,646
+647,Album 647,Kendrick Lamar,1971,Classical,20,647
+648,Album 648,Daft Punk,1970,Electronic,20,648
+649,Album 649,Daft Punk,1999,Pop,19,649
+650,Album 650,Taylor Swift,2018,Classical,20,650
+651,Album 651,Bob Marley,1973,Electronic,8,651
+652,Album 652,Miles Davis,2018,Pop,5,652
+653,Album 653,Daft Punk,1972,Electronic,5,653
+654,Album 654,Mozart,2009,Hip-Hop,16,654
+655,Album 655,The Beatles,2000,Electronic,5,655
+656,Album 656,Daft Punk,1982,Pop,20,656
+657,Album 657,Miles Davis,1960,Blues,10,657
+658,Album 658,Miles Davis,1994,Hip-Hop,13,658
+659,Album 659,The Beatles,2018,Jazz,16,659
+660,Album 660,Bob Marley,1964,Rock,14,660
+661,Album 661,Kendrick Lamar,1968,Hip-Hop,11,661
+662,Album 662,Taylor Swift,1986,Blues,20,662
+663,Album 663,B.B. King,1977,Hip-Hop,7,663
+664,Album 664,Bob Marley,2017,Classical,20,664
+665,Album 665,Bob Marley,2014,Rock,6,665
+666,Album 666,The Beatles,2017,Reggae,20,666
+667,Album 667,B.B. King,1974,Classical,14,667
+668,Album 668,Daft Punk,1984,Rock,7,668
+669,Album 669,Kendrick Lamar,2006,Jazz,6,669
+670,Album 670,The Beatles,1980,Classical,19,670
+671,Album 671,Taylor Swift,2017,Jazz,16,671
+672,Album 672,B.B. King,1967,Rock,18,672
+673,Album 673,Taylor Swift,1970,Electronic,13,673
+674,Album 674,Daft Punk,2011,Hip-Hop,7,674
+675,Album 675,Miles Davis,1984,Pop,16,675
+676,Album 676,Taylor Swift,2007,Blues,18,676
+677,Album 677,Kendrick Lamar,1999,Rock,17,677
+678,Album 678,The Beatles,1995,Electronic,7,678
+679,Album 679,Daft Punk,1973,Hip-Hop,20,679
+680,Album 680,Kendrick Lamar,1970,Rock,20,680
+681,Album 681,Taylor Swift,2013,Electronic,7,681
+682,Album 682,The Beatles,1975,Blues,7,682
+683,Album 683,The Beatles,1984,Pop,18,683
+684,Album 684,Kendrick Lamar,1999,Electronic,20,684
+685,Album 685,Miles Davis,2017,Electronic,18,685
+686,Album 686,Kendrick Lamar,1981,Blues,13,686
+687,Album 687,Bob Marley,2000,Classical,19,687
+688,Album 688,Bob Marley,1971,Jazz,8,688
+689,Album 689,Daft Punk,1977,Hip-Hop,6,689
+690,Album 690,Taylor Swift,1992,Classical,16,690
+691,Album 691,The Beatles,1960,Jazz,14,691
+692,Album 692,B.B. King,1986,Pop,9,692
+693,Album 693,B.B. King,1970,Blues,7,693
+694,Album 694,Miles Davis,1984,Hip-Hop,13,694
+695,Album 695,Mozart,1960,Electronic,8,695
+696,Album 696,B.B. King,1988,Reggae,16,696
+697,Album 697,B.B. King,1982,Pop,19,697
+698,Album 698,Daft Punk,1994,Blues,9,698
+699,Album 699,The Beatles,2014,Reggae,12,699
+700,Album 700,B.B. King,2001,Reggae,18,700
+701,Album 701,Miles Davis,2008,Electronic,8,701
+702,Album 702,Daft Punk,1974,Jazz,10,702
+703,Album 703,B.B. King,1971,Jazz,11,703
+704,Album 704,Mozart,1970,Rock,15,704
+705,Album 705,Bob Marley,2004,Reggae,6,705
+706,Album 706,B.B. King,1985,Electronic,6,706
+707,Album 707,Bob Marley,2020,Reggae,14,707
+708,Album 708,Daft Punk,1964,Hip-Hop,6,708
+709,Album 709,Miles Davis,2013,Hip-Hop,11,709
+710,Album 710,B.B. King,2015,Electronic,6,710
+711,Album 711,Miles Davis,1982,Reggae,12,711
+712,Album 712,Miles Davis,1963,Pop,18,712
+713,Album 713,The Beatles,1984,Classical,13,713
+714,Album 714,Mozart,1965,Blues,14,714
+715,Album 715,Mozart,1987,Rock,5,715
+716,Album 716,The Beatles,1976,Classical,20,716
+717,Album 717,Mozart,2007,Hip-Hop,11,717
+718,Album 718,Taylor Swift,1974,Reggae,12,718
+719,Album 719,Daft Punk,1967,Jazz,9,719
+720,Album 720,Kendrick Lamar,2020,Rock,19,720
+721,Album 721,Bob Marley,1987,Pop,7,721
+722,Album 722,Taylor Swift,1999,Reggae,8,722
+723,Album 723,Kendrick Lamar,1978,Hip-Hop,10,723
+724,Album 724,Miles Davis,1986,Classical,5,724
+725,Album 725,Kendrick Lamar,2003,Rock,14,725
+726,Album 726,Miles Davis,1980,Hip-Hop,16,726
+727,Album 727,The Beatles,2009,Electronic,19,727
+728,Album 728,The Beatles,1975,Reggae,12,728
+729,Album 729,Taylor Swift,1975,Pop,6,729
+730,Album 730,Miles Davis,1993,Classical,18,730
+731,Album 731,Bob Marley,1962,Rock,14,731
+732,Album 732,Taylor Swift,2003,Electronic,8,732
+733,Album 733,Taylor Swift,1985,Electronic,14,733
+734,Album 734,Kendrick Lamar,1989,Classical,8,734
+735,Album 735,B.B. King,1993,Jazz,17,735
+736,Album 736,Mozart,1961,Classical,18,736
+737,Album 737,B.B. King,2008,Blues,7,737
+738,Album 738,Daft Punk,2004,Hip-Hop,16,738
+739,Album 739,Mozart,2012,Electronic,7,739
+740,Album 740,Miles Davis,1976,Electronic,14,740
+741,Album 741,Bob Marley,1979,Pop,20,741
+742,Album 742,Kendrick Lamar,1977,Blues,16,742
+743,Album 743,The Beatles,2002,Rock,6,743
+744,Album 744,Mozart,1970,Classical,10,744
+745,Album 745,Mozart,2012,Pop,11,745
+746,Album 746,Mozart,2006,Blues,12,746
+747,Album 747,Kendrick Lamar,2020,Classical,18,747
+748,Album 748,Kendrick Lamar,1962,Hip-Hop,5,748
+749,Album 749,B.B. King,2018,Rock,8,749
+750,Album 750,Bob Marley,1977,Electronic,5,750
+751,Album 751,B.B. King,1998,Electronic,20,751
+752,Album 752,B.B. King,1988,Electronic,13,752
+753,Album 753,Kendrick Lamar,2010,Classical,7,753
+754,Album 754,B.B. King,1967,Blues,10,754
+755,Album 755,Kendrick Lamar,1996,Pop,5,755
+756,Album 756,Daft Punk,1969,Pop,8,756
+757,Album 757,Daft Punk,2004,Electronic,11,757
+758,Album 758,The Beatles,2006,Rock,17,758
+759,Album 759,Kendrick Lamar,1991,Rock,6,759
+760,Album 760,Kendrick Lamar,1992,Electronic,10,760
+761,Album 761,Kendrick Lamar,2009,Electronic,14,761
+762,Album 762,B.B. King,1998,Rock,15,762
+763,Album 763,Kendrick Lamar,1993,Pop,18,763
+764,Album 764,Daft Punk,1986,Reggae,5,764
+765,Album 765,Miles Davis,1960,Rock,9,765
+766,Album 766,Mozart,2001,Classical,15,766
+767,Album 767,Daft Punk,1965,Jazz,12,767
+768,Album 768,Miles Davis,2005,Rock,7,768
+769,Album 769,Taylor Swift,1975,Jazz,9,769
+770,Album 770,Kendrick Lamar,1972,Pop,17,770
+771,Album 771,Taylor Swift,2017,Pop,13,771
+772,Album 772,Bob Marley,2014,Pop,11,772
+773,Album 773,Taylor Swift,1965,Jazz,17,773
+774,Album 774,Daft Punk,1972,Rock,5,774
+775,Album 775,Taylor Swift,1983,Blues,17,775
+776,Album 776,The Beatles,2010,Hip-Hop,12,776
+777,Album 777,Kendrick Lamar,2016,Hip-Hop,13,777
+778,Album 778,Mozart,1978,Pop,18,778
+779,Album 779,Taylor Swift,1998,Blues,17,779
+780,Album 780,Daft Punk,1998,Classical,6,780
+781,Album 781,Kendrick Lamar,2023,Electronic,13,781
+782,Album 782,Daft Punk,2023,Blues,5,782
+783,Album 783,B.B. King,2000,Blues,7,783
+784,Album 784,Daft Punk,2016,Jazz,19,784
+785,Album 785,Mozart,1996,Reggae,16,785
+786,Album 786,Miles Davis,1970,Jazz,17,786
+787,Album 787,B.B. King,1982,Blues,17,787
+788,Album 788,Bob Marley,1978,Electronic,16,788
+789,Album 789,Taylor Swift,2013,Blues,20,789
+790,Album 790,Taylor Swift,1966,Classical,8,790
+791,Album 791,Kendrick Lamar,2020,Electronic,14,791
+792,Album 792,Mozart,1997,Reggae,10,792
+793,Album 793,Bob Marley,2002,Pop,11,793
+794,Album 794,Taylor Swift,1987,Electronic,5,794
+795,Album 795,B.B. King,1982,Electronic,9,795
+796,Album 796,Bob Marley,1979,Blues,6,796
+797,Album 797,Bob Marley,1992,Hip-Hop,13,797
+798,Album 798,Kendrick Lamar,1960,Rock,5,798
+799,Album 799,Miles Davis,1975,Hip-Hop,10,799
+800,Album 800,The Beatles,1977,Reggae,10,800
+801,Album 801,Bob Marley,1997,Hip-Hop,7,801
+802,Album 802,Daft Punk,2000,Rock,17,802
+803,Album 803,Bob Marley,1972,Rock,12,803
+804,Album 804,Daft Punk,1976,Hip-Hop,15,804
+805,Album 805,Bob Marley,2014,Pop,19,805
+806,Album 806,Bob Marley,1987,Reggae,15,806
+807,Album 807,Bob Marley,1976,Hip-Hop,13,807
+808,Album 808,Kendrick Lamar,1974,Reggae,20,808
+809,Album 809,Daft Punk,1973,Hip-Hop,16,809
+810,Album 810,Taylor Swift,1971,Blues,16,810
+811,Album 811,Taylor Swift,2018,Rock,16,811
+812,Album 812,Mozart,2005,Classical,16,812
+813,Album 813,B.B. King,2017,Hip-Hop,19,813
+814,Album 814,Miles Davis,1980,Electronic,13,814
+815,Album 815,Mozart,1997,Blues,9,815
+816,Album 816,Taylor Swift,1962,Pop,15,816
+817,Album 817,The Beatles,2013,Rock,5,817
+818,Album 818,Taylor Swift,1973,Blues,12,818
+819,Album 819,B.B. King,2002,Electronic,6,819
+820,Album 820,Bob Marley,2019,Reggae,8,820
+821,Album 821,Bob Marley,1981,Blues,17,821
+822,Album 822,Taylor Swift,1963,Classical,7,822
+823,Album 823,Taylor Swift,1993,Hip-Hop,16,823
+824,Album 824,Mozart,1981,Classical,7,824
+825,Album 825,Mozart,1960,Hip-Hop,9,825
+826,Album 826,Miles Davis,2015,Rock,9,826
+827,Album 827,Mozart,2007,Reggae,15,827
+828,Album 828,Bob Marley,2006,Classical,18,828
+829,Album 829,Bob Marley,2004,Reggae,13,829
+830,Album 830,B.B. King,2015,Electronic,11,830
+831,Album 831,Miles Davis,1992,Rock,15,831
+832,Album 832,Taylor Swift,2022,Reggae,19,832
+833,Album 833,Bob Marley,2019,Pop,12,833
+834,Album 834,Taylor Swift,2015,Jazz,20,834
+835,Album 835,Bob Marley,1985,Jazz,7,835
+836,Album 836,Miles Davis,1962,Pop,10,836
+837,Album 837,The Beatles,1974,Jazz,19,837
+838,Album 838,Mozart,1987,Hip-Hop,5,838
+839,Album 839,B.B. King,2022,Classical,11,839
+840,Album 840,Mozart,1968,Reggae,20,840
+841,Album 841,Daft Punk,2020,Rock,9,841
+842,Album 842,Mozart,1989,Blues,15,842
+843,Album 843,Daft Punk,1966,Blues,6,843
+844,Album 844,Mozart,1996,Electronic,20,844
+845,Album 845,Mozart,1998,Rock,15,845
+846,Album 846,Mozart,1964,Jazz,15,846
+847,Album 847,B.B. King,1989,Jazz,5,847
+848,Album 848,Daft Punk,1984,Blues,19,848
+849,Album 849,The Beatles,1972,Rock,16,849
+850,Album 850,Kendrick Lamar,1996,Pop,6,850
+851,Album 851,Mozart,1974,Electronic,16,851
+852,Album 852,Taylor Swift,2009,Pop,20,852
+853,Album 853,Bob Marley,1992,Hip-Hop,10,853
+854,Album 854,Bob Marley,2003,Jazz,17,854
+855,Album 855,Miles Davis,1986,Reggae,9,855
+856,Album 856,B.B. King,1970,Jazz,12,856
+857,Album 857,Kendrick Lamar,2007,Electronic,16,857
+858,Album 858,Taylor Swift,2007,Pop,9,858
+859,Album 859,Bob Marley,1963,Reggae,19,859
+860,Album 860,Daft Punk,1960,Rock,13,860
+861,Album 861,B.B. King,2002,Jazz,8,861
+862,Album 862,The Beatles,1997,Electronic,15,862
+863,Album 863,Kendrick Lamar,1992,Classical,13,863
+864,Album 864,Bob Marley,1974,Jazz,5,864
+865,Album 865,Bob Marley,2017,Reggae,9,865
+866,Album 866,Mozart,2005,Hip-Hop,18,866
+867,Album 867,Taylor Swift,2014,Pop,9,867
+868,Album 868,The Beatles,2012,Blues,5,868
+869,Album 869,Mozart,2001,Hip-Hop,18,869
+870,Album 870,Kendrick Lamar,1982,Hip-Hop,7,870
+871,Album 871,Miles Davis,2012,Blues,13,871
+872,Album 872,Bob Marley,2008,Reggae,5,872
+873,Album 873,Taylor Swift,1999,Classical,9,873
+874,Album 874,Taylor Swift,1988,Pop,18,874
+875,Album 875,Miles Davis,1964,Rock,19,875
+876,Album 876,Daft Punk,2014,Classical,18,876
+877,Album 877,Miles Davis,2001,Jazz,20,877
+878,Album 878,Bob Marley,1967,Pop,11,878
+879,Album 879,Bob Marley,2020,Jazz,19,879
+880,Album 880,The Beatles,1997,Jazz,19,880
+881,Album 881,Kendrick Lamar,2016,Hip-Hop,5,881
+882,Album 882,Taylor Swift,2022,Hip-Hop,5,882
+883,Album 883,Miles Davis,1982,Rock,20,883
+884,Album 884,The Beatles,1964,Blues,6,884
+885,Album 885,Daft Punk,1973,Blues,11,885
+886,Album 886,The Beatles,1972,Hip-Hop,13,886
+887,Album 887,Bob Marley,1978,Jazz,8,887
+888,Album 888,Bob Marley,2009,Blues,18,888
+889,Album 889,B.B. King,2005,Hip-Hop,5,889
+890,Album 890,B.B. King,1967,Pop,15,890
+891,Album 891,Taylor Swift,1984,Blues,7,891
+892,Album 892,B.B. King,2022,Jazz,5,892
+893,Album 893,Mozart,1999,Hip-Hop,10,893
+894,Album 894,Mozart,2023,Blues,14,894
+895,Album 895,The Beatles,1965,Jazz,13,895
+896,Album 896,B.B. King,1970,Rock,18,896
+897,Album 897,Kendrick Lamar,1996,Reggae,5,897
+898,Album 898,Taylor Swift,1992,Electronic,8,898
+899,Album 899,Bob Marley,1965,Rock,8,899
+900,Album 900,Daft Punk,1995,Pop,5,900
+901,Album 901,Mozart,1998,Blues,6,901
+902,Album 902,Miles Davis,1997,Hip-Hop,12,902
+903,Album 903,Miles Davis,2006,Classical,5,903
+904,Album 904,Taylor Swift,1969,Hip-Hop,11,904
+905,Album 905,Daft Punk,2006,Pop,9,905
+906,Album 906,Kendrick Lamar,1972,Pop,5,906
+907,Album 907,The Beatles,1990,Pop,9,907
+908,Album 908,The Beatles,1984,Classical,18,908
+909,Album 909,Bob Marley,1995,Classical,10,909
+910,Album 910,Mozart,1989,Rock,17,910
+911,Album 911,Kendrick Lamar,1983,Rock,7,911
+912,Album 912,The Beatles,2018,Classical,8,912
+913,Album 913,Bob Marley,2019,Electronic,13,913
+914,Album 914,Bob Marley,1998,Hip-Hop,8,914
+915,Album 915,Kendrick Lamar,2022,Jazz,19,915
+916,Album 916,Mozart,2020,Hip-Hop,11,916
+917,Album 917,Daft Punk,1969,Reggae,5,917
+918,Album 918,The Beatles,2021,Rock,5,918
+919,Album 919,Mozart,1993,Hip-Hop,11,919
+920,Album 920,The Beatles,2020,Jazz,13,920
+921,Album 921,Bob Marley,1999,Rock,5,921
+922,Album 922,Taylor Swift,1966,Classical,18,922
+923,Album 923,Daft Punk,1967,Blues,9,923
+924,Album 924,Bob Marley,1974,Pop,14,924
+925,Album 925,Mozart,1975,Classical,20,925
+926,Album 926,Kendrick Lamar,1976,Jazz,12,926
+927,Album 927,Kendrick Lamar,1975,Classical,6,927
+928,Album 928,Miles Davis,1982,Rock,8,928
+929,Album 929,Daft Punk,2003,Blues,7,929
+930,Album 930,Bob Marley,2018,Electronic,10,930
+931,Album 931,Taylor Swift,2020,Pop,6,931
+932,Album 932,Daft Punk,1961,Reggae,19,932
+933,Album 933,Miles Davis,1996,Hip-Hop,16,933
+934,Album 934,Miles Davis,2001,Classical,19,934
+935,Album 935,Taylor Swift,2014,Classical,12,935
+936,Album 936,Bob Marley,1968,Blues,10,936
+937,Album 937,Bob Marley,1984,Blues,5,937
+938,Album 938,Miles Davis,1962,Classical,19,938
+939,Album 939,Daft Punk,1995,Reggae,7,939
+940,Album 940,Mozart,1988,Hip-Hop,5,940
+941,Album 941,Mozart,1960,Classical,8,941
+942,Album 942,Taylor Swift,1973,Rock,6,942
+943,Album 943,Mozart,1973,Reggae,15,943
+944,Album 944,Taylor Swift,1992,Blues,11,944
+945,Album 945,Kendrick Lamar,1961,Pop,8,945
+946,Album 946,Mozart,2019,Hip-Hop,6,946
+947,Album 947,Mozart,1973,Blues,8,947
+948,Album 948,The Beatles,1964,Pop,19,948
+949,Album 949,Mozart,1986,Electronic,5,949
+950,Album 950,Mozart,2020,Blues,11,950
+951,Album 951,The Beatles,1960,Blues,10,951
+952,Album 952,Daft Punk,1962,Pop,13,952
+953,Album 953,Mozart,1986,Pop,6,953
+954,Album 954,Mozart,1969,Rock,7,954
+955,Album 955,Taylor Swift,2020,Pop,16,955
+956,Album 956,Taylor Swift,2019,Hip-Hop,10,956
+957,Album 957,Mozart,1975,Rock,13,957
+958,Album 958,B.B. King,2022,Jazz,9,958
+959,Album 959,Kendrick Lamar,1980,Pop,18,959
+960,Album 960,The Beatles,1996,Electronic,20,960
+961,Album 961,Daft Punk,1993,Hip-Hop,9,961
+962,Album 962,The Beatles,1961,Reggae,20,962
+963,Album 963,Taylor Swift,2009,Classical,8,963
+964,Album 964,The Beatles,1984,Blues,18,964
+965,Album 965,Kendrick Lamar,1984,Blues,10,965
+966,Album 966,Kendrick Lamar,1978,Electronic,6,966
+967,Album 967,Taylor Swift,2014,Jazz,18,967
+968,Album 968,Miles Davis,2006,Pop,18,968
+969,Album 969,The Beatles,2012,Hip-Hop,8,969
+970,Album 970,Taylor Swift,1964,Reggae,6,970
+971,Album 971,The Beatles,1989,Hip-Hop,11,971
+972,Album 972,Kendrick Lamar,1964,Blues,10,972
+973,Album 973,Daft Punk,1990,Jazz,18,973
+974,Album 974,The Beatles,2020,Reggae,20,974
+975,Album 975,Daft Punk,1982,Classical,16,975
+976,Album 976,The Beatles,1961,Electronic,16,976
+977,Album 977,Bob Marley,2011,Hip-Hop,11,977
+978,Album 978,Taylor Swift,1980,Blues,15,978
+979,Album 979,Daft Punk,2020,Rock,10,979
+980,Album 980,Bob Marley,2023,Reggae,14,980
+981,Album 981,The Beatles,1983,Electronic,15,981
+982,Album 982,Kendrick Lamar,2003,Rock,7,982
+983,Album 983,Kendrick Lamar,2007,Rock,6,983
+984,Album 984,Mozart,1964,Electronic,5,984
+985,Album 985,B.B. King,1990,Classical,9,985
+986,Album 986,B.B. King,1961,Electronic,12,986
+987,Album 987,Mozart,1980,Electronic,16,987
+988,Album 988,Daft Punk,1966,Jazz,10,988
+989,Album 989,The Beatles,1975,Classical,8,989
+990,Album 990,Bob Marley,1990,Blues,14,990
+991,Album 991,Taylor Swift,1981,Hip-Hop,10,991
+992,Album 992,Mozart,2000,Pop,10,992
+993,Album 993,Mozart,2019,Classical,7,993
+994,Album 994,B.B. King,2005,Hip-Hop,11,994
+995,Album 995,The Beatles,2014,Blues,17,995
+996,Album 996,Bob Marley,1975,Rock,5,996
+997,Album 997,Taylor Swift,2012,Reggae,10,997
+998,Album 998,Taylor Swift,1962,Hip-Hop,9,998
+999,Album 999,Daft Punk,2016,Pop,5,999
+1000,Album 1000,Taylor Swift,1968,Pop,5,1000
